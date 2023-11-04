@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  weave:
+    image: weav:latest
+    restart: always
+    environment:
+      - MONGO_URL=${MONGO_URL}
+      - PASSPHRASE=${PASSPHRASE}
+      - ENABLE_TUNNEL=${ENABLE_TUNNEL}
+      - PORT=${PORT}
+    ports:
+      - "${PORT}:${PORT}"
+
