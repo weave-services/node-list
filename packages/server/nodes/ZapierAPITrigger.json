@@ -32,7 +32,7 @@
                 { "label": "Get Choices", "name": "actions/choices" },
                 { "label": "Step Test", "name": "actions/step-test" },
                 { "label": "Get Authentications", "name": "authentications" },
-                { "label": "Create Authentication", "name": "authentications" }
+                { "label": "Create Authentication", "name": "authentications/create" }
             ]
         }
     ],
@@ -42,14 +42,36 @@
             "name": "payload",
             "type": "json",
             "placeholder": "{\"key\": \"value\"}",
-            "optional": true
+            "optional": true,
+            "show": {
+                "endpoint": [
+                    "zaps",
+                    "actions/input-fields",
+                    "actions/output-fields",
+                    "actions/choices",
+                    "actions/step-test",
+                    "authentications/create"
+                ]
+            }
         },
         {
             "label": "Query Parameters",
             "name": "queryParams",
             "type": "json",
             "placeholder": "{\"key\": \"value\"}",
-            "optional": true
+            "optional": true,
+            "show": {
+                "endpoint": [
+                    "apps/v1",
+                    "apps/v2",
+                    "categories",
+                    "zap-templates",
+                    "zaps/v1",
+                    "zaps/v2",
+                    "actions",
+                    "authentications"
+                ]
+            }
         }
     ],
     "credentials": [
