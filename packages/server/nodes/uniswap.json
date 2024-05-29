@@ -94,7 +94,8 @@
         {
             "label": "Network",
             "name": "network",
-            "type": "options",
+            "type": "asyncOptions",
+            "loadMethod": "loadNetworks",
             "options": [
                 {
                     "label": "Mainnet",
