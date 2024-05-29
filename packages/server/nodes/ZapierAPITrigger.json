@@ -4,7 +4,7 @@
     "loadMethods": {},
     "label": "Zapier API Trigger",
     "name": "ZapierAPITrigger",
-    "icon": "https://parsio.io/_nuxt/image/cebf5c.png",
+    "icon": "https://www.svgrepo.com/show/354596/zapier-icon.svg",
     "type": "trigger",
     "category": "Integrations",
     "version": 1,
