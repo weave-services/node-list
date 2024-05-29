@@ -59,7 +59,6 @@
             "default": "get"
         }
     ],
-    "networks": [],
     "credentials": [
         {
             "label": "Redis Credentials",
