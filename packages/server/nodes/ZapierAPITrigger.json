@@ -1,0 +1,70 @@
+{
+    "_events": {},
+    "_eventsCount": 0,
+    "loadMethods": {},
+    "label": "Zapier API Trigger",
+    "name": "ZapierAPITrigger",
+    "icon": "https://parsio.io/_nuxt/image/cebf5c.png",
+    "type": "trigger",
+    "category": "Integrations",
+    "version": 1,
+    "description": "Start workflow based on Zapier API events",
+    "incoming": 0,
+    "outgoing": 1,
+    "actions": [
+        {
+            "label": "Select Endpoint",
+            "name": "endpoint",
+            "type": "options",
+            "options": [
+                { "label": "Get Apps [v1]", "name": "apps/v1" },
+                { "label": "Get Apps [v2]", "name": "apps/v2" },
+                { "label": "Get Categories", "name": "categories" },
+                { "label": "Create Account", "name": "accounts" },
+                { "label": "User Profile", "name": "accounts/profile" },
+                { "label": "Get Zap Templates", "name": "zap-templates" },
+                { "label": "Create a Zap", "name": "zaps" },
+                { "label": "Get Zaps [v1]", "name": "zaps/v1" },
+                { "label": "Get Zaps [v2]", "name": "zaps/v2" },
+                { "label": "Get Actions", "name": "actions" },
+                { "label": "Get Input Fields", "name": "actions/input-fields" },
+                { "label": "Get Output Fields", "name": "actions/output-fields" },
+                { "label": "Get Choices", "name": "actions/choices" },
+                { "label": "Step Test", "name": "actions/step-test" },
+                { "label": "Get Authentications", "name": "authentications" },
+                { "label": "Create Authentication", "name": "authentications" }
+            ]
+        }
+    ],
+    "inputParameters": [
+        {
+            "label": "Payload",
+            "name": "payload",
+            "type": "json",
+            "placeholder": "{\"key\": \"value\"}",
+            "optional": true
+        },
+        {
+            "label": "Query Parameters",
+            "name": "queryParams",
+            "type": "json",
+            "placeholder": "{\"key\": \"value\"}",
+            "optional": true
+        }
+    ],
+    "credentials": [
+        {
+            "label": "Authorization",
+            "name": "credentialMethod",
+            "type": "options",
+            "options": [
+                {
+                    "label": "Bearer Token Auth",
+                    "name": "zapierBearerTokenAuth"
+                }
+            ],
+            "default": "zapierBearerTokenAuth"
+        }
+    ],
+    "filePath": "https://raw.githubusercontent.com/fruitbox12/nodes/main/nodes/Zapier/zapier.js"
+}
