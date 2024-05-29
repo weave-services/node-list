@@ -2,7 +2,7 @@
     "loadMethods": {},
     "label": "Redis",
     "name": "redis",
-    "icon": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/Redis/redis.png",
+    "icon": "https://www.svgrepo.com/show/303460/redis-logo.svg",
     "type": "action",
     "category": "Database",
     "version": 1,
