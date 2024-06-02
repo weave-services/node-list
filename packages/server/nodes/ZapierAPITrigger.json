@@ -2,7 +2,7 @@
     "loadMethods": {},
     "label": "Zapier API Trigger",
     "name": "ZapierAPITrigger",
-    "icon": "https://www.svgrepo.com/show/354596/zapier-icon.svg",
+    "icon": "https://cdn.iconscout.com/icon/free/png-256/free-zapier-3629179-3030319.png",
     "type": "trigger",
     "category": "Integrations",
     "version": 1,
