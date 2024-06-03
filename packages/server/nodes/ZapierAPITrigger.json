@@ -3,7 +3,7 @@
     "label": "Zapier API Trigger",
     "name": "ZapierAPITrigger",
     "icon": "https://cdn.iconscout.com/icon/free/png-256/free-zapier-3629179-3030319.png",
-    "type": "trigger",
+    "type": "action",
     "category": "Integrations",
     "version": 1,
     "description": "Start workflow based on Zapier API events",
