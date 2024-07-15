@@ -26,7 +26,7 @@
     {
       "label": "Credential Method",
       "name": "credentialMethod",
-      "type": "options",
+      "type": "string",
       "options": [
         {
           "label": "OpenAI API Key",
@@ -37,19 +37,6 @@
     }
   ],
   "inputParameters": [
-    {
-      "label": "Model",
-      "name": "model",
-      "type": "asyncOptions",
-      "loadMethod": "listModels",
-      "description": "AI model to use.",
-      "default": "text-embedding-ada-002",
-      "show": {
-        "actions.operation": [
-          "generateEmbeddings"
-        ]
-      }
-    },
     {
       "label": "Model",
       "name": "model",
