@@ -7,7 +7,7 @@
     "category": "Artificial Intelligence",
     "version": 1,
     "description": "Wrapper around Azure OpenAI large language models",
-    "incoming": 0,
+    "incoming": 1,
     "outgoing": 1,
     "actions": [
         {
