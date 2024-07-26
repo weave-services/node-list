@@ -24,7 +24,7 @@
     {
       "label": "SMTP Credentials",
       "name": "smtpCredentials",
-      "type": "object",
+      "type": "options",
       "properties": [
         {
           "label": "Host",
