@@ -59,14 +59,24 @@
           "description": "Retrieves details of a specific thread using the thread ID."
         },
         {
+          "label": "Modify Thread",
+          "name": "modifyThread",
+          "description": "Modifies an existing thread using the thread ID."
+        },
+        {
+          "label": "Delete Thread",
+          "name": "deleteThread",
+          "description": "Deletes a thread using the thread ID."
+        },
+        {
           "label": "List Messages",
           "name": "listMessages",
-          "description": "Fetches a list of all messages."
+          "description": "Fetches a list of all messages for a thread."
         },
         {
           "label": "Create Message",
           "name": "createMessage",
-          "description": "Creates a new message."
+          "description": "Creates a new message in a thread."
         },
         {
           "label": "Get Message",
@@ -197,7 +207,12 @@
       "description": "The ID of the thread.",
       "show": {
         "actions.api": [
-          "getThread"
+          "getThread",
+          "modifyThread",
+          "deleteThread",
+          "listMessages",
+          "createMessage",
+          "getMessage"
         ]
       }
     },
@@ -335,6 +350,85 @@
       "show": {
         "actions.api": [
           "modifyAssistant"
+        ]
+      }
+    },
+    {
+      "label": "Limit",
+      "name": "limit",
+      "type": "number",
+      "description": "The limit on the number of objects to be returned.",
+      "show": {
+        "actions.api": [
+          "listMessages"
+        ]
+      }
+    },
+    {
+      "label": "Order",
+      "name": "order",
+      "type": "string",
+      "description": "The order of the objects to be returned.",
+      "show": {
+        "actions.api": [
+          "listMessages"
+        ]
+      }
+    },
+    {
+      "label": "After",
+      "name": "after",
+      "type": "string",
+      "description": "The cursor after which to return the results.",
+      "show": {
+        "actions.api": [
+          "listMessages"
+        ]
+      }
+    },
+    {
+      "label": "Before",
+      "name": "before",
+      "type": "string",
+      "description": "The cursor before which to return the results.",
+      "show": {
+        "actions.api": [
+          "listMessages"
+        ]
+      }
+    },
+    {
+      "label": "Metadata",
+      "name": "metadata",
+      "type": "json",
+      "description": "The metadata for the object.",
+      "show": {
+        "actions.api": [
+          "modifyThread"
+        ]
+      }
+    },
+    {
+      "label": "Tool Resources",
+      "name": "tool_resources",
+      "type": "json",
+      "description": "The tool resources for the thread.",
+      "show": {
+        "actions.api": [
+          "createThread",
+          "modifyThread"
+        ]
+      }
+    },
+    {
+      "label": "Messages",
+      "name": "messages",
+      "type": "json",
+      "description": "The messages to start the thread with.",
+      "show": {
+        "actions.api": [
+          "createThread",
+          "createMessage"
         ]
       }
     }
