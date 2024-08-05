@@ -88,13 +88,56 @@
       }
     },
     {
+      "label": "Description",
+      "name": "description",
+      "type": "string",
+      "description": "The description of the assistant.",
+      "show": {
+        "actions.api": [
+          "createAssistant"
+        ]
+      }
+    },
+    {
+      "label": "Functions",
+      "name": "functions",
+      "type": "json",
+      "description": "The functions for the assistant.",
+      "show": {
+        "actions.api": [
+          "createAssistant"
+        ]
+      }
+    },
+    {
+      "label": "Memory Settings",
+      "name": "memory_settings",
+      "type": "json",
+      "description": "The memory settings for the assistant.",
+      "show": {
+        "actions.api": [
+          "createAssistant"
+        ]
+      }
+    },
+    {
+      "label": "Log Settings",
+      "name": "log_settings",
+      "type": "json",
+      "description": "The log settings for the assistant.",
+      "show": {
+        "actions.api": [
+          "createAssistant"
+        ]
+      }
+    },
+    {
       "label": "Configuration",
       "name": "configuration",
       "type": "json",
       "description": "The configuration details for the assistant.",
       "show": {
         "actions.api": [
-          "createAssistant",
           "modifyAssistant"
         ]
       }
