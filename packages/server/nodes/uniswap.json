@@ -98,7 +98,7 @@
         {
             "label": "From Token",
             "name": "fromToken",
-            "type": "asyncOptions",
+            "type": "options",
             "description": "Contract address of the token you want to convert FROM.",
             "loadMethod": "getTokens",
             "show": {
@@ -108,7 +108,7 @@
         {
             "label": "To Token",
             "name": "toToken",
-            "type": "asyncOptions",
+            "type": "options",
             "description": "Contract address of the token you want to convert TO.",
             "loadMethod": "getTokens",
             "show": {
@@ -126,7 +126,7 @@
         {
             "label": "Select Wallet",
             "name": "wallet",
-            "type": "asyncOptions",
+            "type": "options",
             "description": "Wallet account to swap tokens.",
             "loadFromDbCollections": ["Wallet"],
             "loadMethod": "getWallets",
