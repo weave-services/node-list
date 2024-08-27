@@ -98,7 +98,7 @@
         {
             "label": "From Token",
             "name": "fromToken",
-            "type": "options",
+            "type": "string",
             "description": "Contract address of the token you want to convert FROM.",
             "loadMethod": "getTokens",
             "show": {
@@ -108,7 +108,7 @@
         {
             "label": "To Token",
             "name": "toToken",
-            "type": "options",
+            "type": "string",
             "description": "Contract address of the token you want to convert TO.",
             "loadMethod": "getTokens",
             "show": {
