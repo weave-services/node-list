@@ -1,15 +1,15 @@
-  {
+{
   "label": "GitHub Webhook",
   "name": "GitHubWebhook",
   "type": "webhook",
-  "version": 1.0,
+  "version": 1,
   "description": "Start workflow whenever a GitHub webhook event occurs",
- "icons": {
-      "default": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png",
-      "light": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png",
-      "dark": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png"
-    },
-    "category": "Development",
+  "icons": {
+    "default": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png",
+    "light": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png",
+    "dark": "https://raw.githubusercontent.com/Outerbridgeio/Outerbridge/master/packages/components/nodes/GitHub/GitHub-Logo.png"
+  },
+  "category": "Development",
   "incoming": 0,
   "outgoing": 1,
   "actions": [
