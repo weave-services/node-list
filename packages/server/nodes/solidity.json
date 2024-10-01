@@ -105,7 +105,7 @@
     {
       "label": "Credential Method",
       "name": "credentialMethod",
-      "type": "options",
+      "type": "string",
       "options": [
         {
           "label": "Alchemy API Key",
