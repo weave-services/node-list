@@ -2,7 +2,7 @@
   "loadMethods": {},
   "label": "Solidity",
   "name": "solidity",
- "icons": {
+  "icons": {
     "default": "https://github.com/Outerbridgeio/Outerbridge/raw/refs/heads/master/packages/components/nodes/Solidity/solidity.svg",
     "light": "https://github.com/Outerbridgeio/Outerbridge/raw/refs/heads/master/packages/components/nodes/Solidity/solidity.svg",
     "dark": "https://github.com/Outerbridgeio/Outerbridge/raw/refs/heads/master/packages/components/nodes/Solidity/solidity.svg"
@@ -105,7 +105,7 @@
     {
       "label": "Credential Method",
       "name": "credentialMethod",
-      "type": "string",
+      "type": "options",
       "options": [
         {
           "label": "Alchemy API Key",
@@ -163,12 +163,9 @@
     {
       "label": "Select Wallet",
       "name": "wallet",
-      "type": "asyncOptions",
-      "description": "Wallet account to deploy Solidity code",
-      "loadFromDbCollections": [
-        "Wallet"
-      ],
-      "loadMethod": "getWallets"
+      "type": "string",
+      "description": "Enter the wallet private key to deploy Solidity code",
+      "default": ""
     },
     {
       "label": "Constructor Parameters",
