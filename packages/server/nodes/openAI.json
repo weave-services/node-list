@@ -67,8 +67,8 @@
       }
     },
     {
-      "label": "Model",
-      "name": "model",
+      "label": "ChatGPT Model",
+      "name": "model_chatgpt",
       "type": "options",
       "options": [
         {
@@ -94,28 +94,10 @@
         {
           "label": "gpt-4-turbo-preview",
           "name": "gpt-4-turbo-preview"
-        },
-        {
-          "label": "gpt-4-vision-preview",
-          "name": "gpt-4-vision-preview"
         }
       ],
       "description": "ChatGPT model to use.",
       "default": "gpt-3.5-turbo",
-      "show": {
-        "actions.operation": [
-          "chatgpt",
-          "visionAnalysis"
-        ]
-      }
-    },
-    {
-      "label": "Text Prompt",
-      "name": "prompt",
-      "type": "string",
-      "default": "",
-      "placeholder": "Write me a 250 words essay on fish",
-      "description": "The prompt for chatGPT",
       "show": {
         "actions.operation": [
           "chatgpt"
@@ -123,12 +105,43 @@
       }
     },
     {
-      "label": "Text Prompt",
-      "name": "prompt",
+      "label": "Vision Model",
+      "name": "model_vision",
+      "type": "options",
+      "options": [
+        {
+          "label": "gpt-4-vision-preview",
+          "name": "gpt-4-vision-preview"
+        }
+      ],
+      "description": "Model to use for vision analysis.",
+      "default": "gpt-4-vision-preview",
+      "show": {
+        "actions.operation": [
+          "visionAnalysis"
+        ]
+      }
+    },
+    {
+      "label": "ChatGPT Prompt",
+      "name": "prompt_chatgpt",
+      "type": "string",
+      "default": "",
+      "placeholder": "Write me a 250-word essay on fish",
+      "description": "The prompt for ChatGPT.",
+      "show": {
+        "actions.operation": [
+          "chatgpt"
+        ]
+      }
+    },
+    {
+      "label": "Text Completion Prompt",
+      "name": "prompt_textCompletion",
       "type": "string",
       "default": "",
       "placeholder": "Say this is a test",
-      "description": "The prompt to generate completions for",
+      "description": "The prompt to generate completions for.",
       "show": {
         "actions.operation": [
           "textCompletion"
@@ -137,7 +150,7 @@
     },
     {
       "label": "Image Description",
-      "name": "prompt",
+      "name": "prompt_generateImage",
       "type": "string",
       "default": "",
       "placeholder": "Photograph of an astronaut riding a horse",
@@ -225,8 +238,8 @@
       }
     },
     {
-      "label": "Text Prompt for Vision Analysis",
-      "name": "prompt",
+      "label": "Vision Analysis Prompt",
+      "name": "prompt_visionAnalysis",
       "type": "string",
       "default": "What can you see in the image?",
       "placeholder": "Describe the image content",
