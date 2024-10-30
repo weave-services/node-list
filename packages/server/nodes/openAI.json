@@ -2,15 +2,15 @@
   "loadMethods": {},
   "label": "OpenAI",
   "name": "openAI",
-  "icons": {
-    "default": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/default.svg",
-    "light": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/light.svg",
-    "dark": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/dark.svg"
-  },
+   "icons": {
+        "default": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/default.svg",
+        "light": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/light.svg",
+        "dark": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/dark.svg"
+      },
   "type": "action",
   "category": "Artificial Intelligence",
   "version": 1,
-  "description": "ChatGPT, image generation, text completion, or vision analysis from prompt via OpenAI API",
+  "description": "ChatGPT, image generation or text completion from prompt via OpenAI API",
   "incoming": 1,
   "outgoing": 1,
   "actions": [
@@ -30,10 +30,6 @@
         {
           "label": "Generate Text Completion via text prompt",
           "name": "textCompletion"
-        },
-        {
-          "label": "Vision Analysis",
-          "name": "visionAnalysis"
         }
       ]
     }
@@ -67,8 +63,8 @@
       }
     },
     {
-      "label": "ChatGPT Model",
-      "name": "model_chatgpt",
+      "label": "Model",
+      "name": "model",
       "type": "options",
       "options": [
         {
@@ -87,11 +83,7 @@
           "label": "gpt-4o",
           "name": "gpt-4o"
         },
-        {
-          "label": "gpt-4o-mini",
-          "name": "gpt-4o-mini"
-        },
-        {
+         {
           "label": "gpt-4-turbo-preview",
           "name": "gpt-4-turbo-preview"
         }
@@ -105,30 +97,12 @@
       }
     },
     {
-      "label": "Vision Model",
-      "name": "model_vision",
-      "type": "options",
-      "options": [
-        {
-          "label": "gpt-4-vision-preview",
-          "name": "gpt-4-vision-preview"
-        }
-      ],
-      "description": "Model to use for vision analysis.",
-      "default": "gpt-4-vision-preview",
-      "show": {
-        "actions.operation": [
-          "visionAnalysis"
-        ]
-      }
-    },
-    {
-      "label": "ChatGPT Prompt",
-      "name": "prompt_chatgpt",
+      "label": "Text Prompt",
+      "name": "prompt",
       "type": "string",
       "default": "",
-      "placeholder": "Write me a 250-word essay on fish",
-      "description": "The prompt for ChatGPT.",
+      "placeholder": "Write me a 250 words essay on fish",
+      "description": "The prompt for chatpgt",
       "show": {
         "actions.operation": [
           "chatgpt"
@@ -136,12 +110,12 @@
       }
     },
     {
-      "label": "Text Completion Prompt",
-      "name": "prompt_textCompletion",
+      "label": "Text Prompt",
+      "name": "prompt",
       "type": "string",
       "default": "",
       "placeholder": "Say this is a test",
-      "description": "The prompt to generate completions for.",
+      "description": "The prompt to generate completions for",
       "show": {
         "actions.operation": [
           "textCompletion"
@@ -150,11 +124,11 @@
     },
     {
       "label": "Image Description",
-      "name": "prompt_generateImage",
+      "name": "prompt",
       "type": "string",
       "default": "",
       "placeholder": "Photograph of an astronaut riding a horse",
-      "description": "Description of the image you want generated. The maximum length is 1000 characters.",
+      "description": "Description of the image you want to generated. The maximum length is 1000 characters.",
       "show": {
         "actions.operation": [
           "generateImage"
@@ -222,32 +196,6 @@
       "show": {
         "actions.operation": [
           "generateImage"
-        ]
-      }
-    },
-    {
-      "label": "Image URL",
-      "name": "imageUrl",
-      "type": "string",
-      "placeholder": "https://example.com/image.png",
-      "description": "The URL of the image to analyze with GPT Vision.",
-      "show": {
-        "actions.operation": [
-          "visionAnalysis"
-        ]
-      }
-    },
-    {
-      "label": "Vision Analysis Prompt",
-      "name": "prompt_visionAnalysis",
-      "type": "string",
-      "default": "What can you see in the image?",
-      "placeholder": "Describe the image content",
-      "description": "Prompt for analyzing the image content.",
-      "optional": true,
-      "show": {
-        "actions.operation": [
-          "visionAnalysis"
         ]
       }
     }
