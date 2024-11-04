@@ -1,13 +1,12 @@
-
 {
   "loadMethods": {},
   "label": "OpenAI",
   "name": "openAI",
-   "icons": {
-        "default": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/default.svg",
-        "light": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/light.svg",
-        "dark": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/dark.svg"
-      },
+  "icons": {
+    "default": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/default.svg",
+    "light": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/light.svg",
+    "dark": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/dark.svg"
+  },
   "type": "action",
   "category": "Artificial Intelligence",
   "version": 1,
@@ -84,11 +83,11 @@
           "label": "gpt-4o",
           "name": "gpt-4o"
         },
-         {
+        {
           "label": "gpt-4-turbo-preview",
           "name": "gpt-4-turbo-preview"
         },
-        {
+            {
           "label": "gpt-4o-mini",
           "name": "gpt-4o-mini"
         }
@@ -102,12 +101,68 @@
       }
     },
     {
+      "label": "Max Tokens",
+      "name": "max_tokens",
+      "type": "number",
+      "description": "The maximum number of tokens to generate.",
+      "optional": true,
+      "default": 100,
+      "show": {
+        "actions.operation": [
+          "chatgpt",
+          "textCompletion"
+        ]
+      }
+    },
+    {
+      "label": "Top P",
+      "name": "top_p",
+      "type": "number",
+      "description": "Nucleus sampling parameter to control diversity (between 0 and 1).",
+      "optional": true,
+      "default": 1.0,
+      "show": {
+        "actions.operation": [
+          "chatgpt",
+          "textCompletion"
+        ]
+      }
+    },
+    {
+      "label": "Temperature",
+      "name": "temperature",
+      "type": "number",
+      "description": "Controls randomness in output (between 0 and 1).",
+      "optional": true,
+      "default": 0.7,
+      "show": {
+        "actions.operation": [
+          "chatgpt",
+          "textCompletion"
+        ]
+      }
+    },
+    {
+      "label": "Top K",
+      "name": "top_k",
+      "type": "number",
+      "description": "Limits number of options considered at each token generation (for certain models).",
+      "optional": true,
+      "default": 40,
+      "show": {
+        "actions.operation": [
+          "chatgpt",
+          "textCompletion"
+        ]
+      }
+    },
+    {
       "label": "Text Prompt",
       "name": "prompt",
       "type": "string",
       "default": "",
       "placeholder": "Write me a 250 words essay on fish",
-      "description": "The prompt for chatpgt",
+      "description": "The prompt for ChatGPT",
       "show": {
         "actions.operation": [
           "chatgpt"
@@ -133,7 +188,7 @@
       "type": "string",
       "default": "",
       "placeholder": "Photograph of an astronaut riding a horse",
-      "description": "Description of the image you want to generated. The maximum length is 1000 characters.",
+      "description": "Description of the image you want to generate. The maximum length is 1000 characters.",
       "show": {
         "actions.operation": [
           "generateImage"
