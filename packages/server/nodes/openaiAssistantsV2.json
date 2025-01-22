@@ -1,5 +1,5 @@
 {
-  "label": "OpenAI Assistants V2",
+  "label": "OpenAI Assistants API V2",
   "name": "openaiAssistantsV2",
   "icons": {
     "default": "https://raw.githubusercontent.com/weave-services/node-assets/main/nodes/OpenAI/default.svg",
@@ -180,10 +180,10 @@
       "options": [
         {
           "label": "OpenAI API Key",
-          "name": "openAIApi"
+          "name": "YOUR OPENAI API KEY"
         }
       ],
-      "default": "openAIApi"
+      "default": "YOUR OPENAI API KEY"
     }
   ],
   "inputParameters": [
